@@ -1,0 +1,11 @@
+
+  <p><img [src] = "User.photo"/></p>
+  <p>Name : {{User.name}}</p>
+  <p>FirstName : {{User.firstName}}</p>
+  <p [hidden]="click">Age : {{User.age}}</p>
+  <p>Quote : {{User.quote}}</p>
+  <p><input [(ngModel)]="User.quote"></p>
+  <p><button (click)="click = !click ">Click to delete age info</button></p>
+
+
+
