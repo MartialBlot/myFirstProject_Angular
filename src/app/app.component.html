@@ -21,3 +21,12 @@
 <app-sign-up></app-sign-up>
 <app-user-profile></app-user-profile>
 <router-outlet></router-outlet>
+
+<p>My favorite movies</p><button (click)="showMovies = !showMovies">Show movies</button>
+<ul [hidden] = "showMovies">
+  <li appHighlight>Pulpe Fiction</li>
+  <li>Scarface</li>
+  <li>JAWS</li>
+  <li>Pick of Destiny</li>
+  <li>spinal tap</li>
+</ul>
